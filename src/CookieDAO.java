@@ -33,8 +33,9 @@ public class CookieDAO extends GenericDAO<CookieBean> {
         // Calls GenericDAO's match() method.
         // This no match constraint arguments, match returns all the Item beans
 		CookieBean[] cookies = match(MatchArg.equals("hid", id).and(MatchArg.equals("domain", domain)));
-		return cookies[0];
-	}
+        return cookies != null && cookies.length > 0 ? cookies[0] : null;
+
+    }
 
 	@Override
 	public void update(CookieBean bean) throws RollbackException {
