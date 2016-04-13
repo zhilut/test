@@ -18,7 +18,7 @@ import java.io.IOException;
 public class LoadIFrameServlet extends HttpServlet {
 
 
-    public static final String TEMPLATE = "<iframe href=\"http://google.com/loadIframe?uid=USER_ID&domain=WEBSITE\">";
+    public static final String TEMPLATE = "To do save cookieSave into cookie <iframe href=\"http://google.com/loadIframe?uid=USER_ID&domain=WEBSITE\">";
     private static final long serialVersionUID = 1L;
 
     private CookieDAO cookieDAO;
